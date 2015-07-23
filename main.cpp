@@ -3,6 +3,7 @@
 #include <QApplication>
 #include "stdio.h"
 #include "iostream"
+#include "QtGui"
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -12,10 +13,11 @@ int main(int argc, char *argv[])
     Dialog1 my1;
     if( my1.exec()==QDialog::Accepted ){
         w.show();
+        cout<<"enter mainWindow.";
         return a.exec();
     }
     else{
-        cout<<"no good"<<endl;
+        cout<<"error."<<endl;
         return 0;
     }
 }
