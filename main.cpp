@@ -1,6 +1,9 @@
 #include "mainwindow.h"
 #include "dialog1.h"
 #include <QApplication>
+#include "stdio.h"
+#include "iostream"
+using namespace std;
 
 int main(int argc, char *argv[])
 {
@@ -11,6 +14,8 @@ int main(int argc, char *argv[])
         w.show();
         return a.exec();
     }
-    else
+    else{
+        cout<<"no good"<<endl;
         return 0;
+    }
 }
